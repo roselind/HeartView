@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-nk-Ylm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4WB-Km-rFs">
+                                        <rect key="frame" x="70" y="0.0" width="380" height="667"/>
+                                        <connections>
+                                            <segue destination="Cay-dv-kF0" kind="embed" identifier="homeViewController" id="rSP-r2-8qs"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oq6-QU-1Td">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="667"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="dsh-s4-O9y"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="nAI-Um-oJh" kind="embed" identifier="menuViewController" id="d1w-lp-fRV"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="tintColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Oq6-QU-1Td" firstAttribute="top" secondItem="0p8-nk-Ylm" secondAttribute="top" id="HcH-9L-ZO0"/>
+                                    <constraint firstItem="Oq6-QU-1Td" firstAttribute="height" secondItem="4WB-Km-rFs" secondAttribute="height" id="HzV-UO-iPV"/>
+                                    <constraint firstItem="4WB-Km-rFs" firstAttribute="leading" secondItem="Oq6-QU-1Td" secondAttribute="trailing" id="PkB-DO-jZ2"/>
+                                    <constraint firstItem="4WB-Km-rFs" firstAttribute="top" secondItem="0p8-nk-Ylm" secondAttribute="top" id="QYi-ru-kCY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oq6-QU-1Td" secondAttribute="bottom" id="f7d-QY-c4u"/>
+                                    <constraint firstAttribute="trailing" secondItem="4WB-Km-rFs" secondAttribute="trailing" constant="-70" id="jTa-hc-24t"/>
+                                    <constraint firstItem="Oq6-QU-1Td" firstAttribute="leading" secondItem="0p8-nk-Ylm" secondAttribute="leading" id="rFQ-cd-Sv0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0p8-nk-Ylm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1w3-e0-xVV"/>
+                            <constraint firstItem="0p8-nk-Ylm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hal-Tq-dOX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0p8-nk-Ylm" secondAttribute="bottom" id="sl7-I2-xyU"/>
+                            <constraint firstAttribute="trailing" secondItem="0p8-nk-Ylm" secondAttribute="trailing" id="vcO-1T-lR7"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="container" destination="4WB-Km-rFs" id="KC5-8r-UEU"/>
+                        <outlet property="scrollView" destination="0p8-nk-Ylm" id="OLp-4S-CaG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285.5" y="298.5"/>
+        </scene>
+        <!--Occupational View Controller-->
+        <scene sceneID="oYY-yY-a6g">
+            <objects>
+                <viewController storyboardIdentifier="Occupational" id="ffs-67-a2I" customClass="OccupationalViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uqT-t4-ROz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ImK-is-mOA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="au5-GQ-hxs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="期望职业" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g59-Uj-Wks">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="期望行业 → 移动互联网" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwC-6R-uiq">
+                                <rect key="frame" x="98" y="196" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="期望月薪 →面议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7h-jO-UX5">
+                                <rect key="frame" x="98" y="452" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="期望地点 → 南京" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcn-Tg-TVF">
+                                <rect key="frame" x="98" y="365" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="☞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSg-kh-QjZ">
+                                <rect key="frame" x="20" y="178" width="62" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="☞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Me-QZ-bNh">
+                                <rect key="frame" x="20" y="347" width="62" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="☞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x56-lb-BOf">
+                                <rect key="frame" x="20" y="434" width="62" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="☞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuG-q4-Y90">
+                                <rect key="frame" x="20" y="265" width="62" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="期望职位 → iOS开发工程师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEG-1b-WOi">
+                                <rect key="frame" x="98" y="283" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="companyLabel" destination="PwC-6R-uiq" id="Xi3-BI-5Lr"/>
+                        <outlet property="hand1" destination="nSg-kh-QjZ" id="3IB-hI-FxO"/>
+                        <outlet property="hand2" destination="NuG-q4-Y90" id="loP-WC-LTh"/>
+                        <outlet property="hand3" destination="5Me-QZ-bNh" id="feN-AJ-mvY"/>
+                        <outlet property="hand4" destination="x56-lb-BOf" id="WbJ-QU-azv"/>
+                        <outlet property="jobLabel" destination="aEG-1b-WOi" id="sWq-85-jWB"/>
+                        <outlet property="locationLabel" destination="tcn-Tg-TVF" id="hwv-fG-Bit"/>
+                        <outlet property="payLabel" destination="B7h-jO-UX5" id="8x2-ZK-Z3u"/>
+                        <outlet property="titleLabel" destination="g59-Uj-Wks" id="cdl-IJ-z0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29U-CX-FYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.5" y="1103.5"/>
+        </scene>
+        <!--Personal Profile View Controller-->
+        <scene sceneID="jVg-Xp-AQr">
+            <objects>
+                <viewController storyboardIdentifier="PersonalProfile" id="IKZ-yV-swo" customClass="PersonalProfileViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="utS-7R-XKd"/>
+                        <viewControllerLayoutGuide type="bottom" id="odq-dc-u1q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UMd-Tn-PeJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="专业技能" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em3-Yz-Zre">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CT-B5-lDA">
+                                <rect key="frame" x="20" y="83" width="335" height="524"/>
+                                <string key="text">1.熟悉Objective-C/Swift2.2，更爱Swift的优雅 
+2.熟悉iPhone SDK，了解iOS9,3 新特性，熟悉MVC/MVVM
+3.熟悉app上架的流程、真机调试
+4.使用GIT、CocoaPods，当然也欣赏SVN/Carthage 
+5.熟悉常用UIKit控件的使用及重写，熟悉KVO/KVC
+6.熟悉界面传值，习惯使用NSNotificationCenter/Delegate
+7.熟悉Storyboard、Xib、及纯代码开发，Autolayout的使用，手写使用Masonry 
+8.熟悉网络交互，熟悉字典转模型/JSON解析，Alamofire/AFNetworking/SwiftJSON 
+9.了解NSUserDefaults/Plist/SQLite/CoreData/ FMDB 
+10.了解Socket网络编程，有XMPP/环信开发经验 
+11.了解常用第三方框架的使用 ,了解GitHub上Most Stars前列的项目
+12.了解GCD/Runtime/Runloop黑魔法 
+13.会使用提高生产力工具，例如Sketch/Reveal/Alfred/Charles 
+14.英文文档阅读能力，常看StackOverflow/ Raywenderlich/GitHub/Objc.io</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="7CT-B5-lDA" id="3Qz-lM-8pN"/>
+                        <outlet property="titleLabel" destination="em3-Yz-Zre" id="jx0-oc-7ff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mwm-21-yh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432.5" y="1103.5"/>
+        </scene>
+        <!--Education Experience View Controller-->
+        <scene sceneID="bHM-0T-G5B">
+            <objects>
+                <viewController storyboardIdentifier="EducationExperience" id="ZWJ-dv-eHS" customClass="EducationExperienceViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f2M-4P-BTQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XOg-Vb-tz6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xxo-QP-CUM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="教育经历" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSu-wQ-LaM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="南京邮电大学通达学院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PH-5a-o0E">
+                                <rect key="frame" x="102" y="167" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="软件工程" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVU-eA-5F6">
+                                <rect key="frame" x="153" y="380" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2012-2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2B-GR-K4H">
+                                <rect key="frame" x="145" y="272" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="在校荣誉：2013学年/2014学年三等奖学金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fma-6E-Zj6">
+                                <rect key="frame" x="13" y="465" width="349" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="honorLabel" destination="Fma-6E-Zj6" id="83i-VV-wHf"/>
+                        <outlet property="majorLabel" destination="YVU-eA-5F6" id="8qa-WT-mRJ"/>
+                        <outlet property="schoolLabel" destination="9PH-5a-o0E" id="3oJ-RK-hdN"/>
+                        <outlet property="timeLabel" destination="k2B-GR-K4H" id="Bgo-6a-h9F"/>
+                        <outlet property="titleLabel" destination="DSu-wQ-LaM" id="r65-YR-nxn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xd-9v-Kqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914.5" y="1103.5"/>
+        </scene>
+        <!--Work Experience View Controller-->
+        <scene sceneID="eOZ-xZ-5S3">
+            <objects>
+                <viewController storyboardIdentifier="WorkExperience" id="4vc-5H-UJ9" customClass="WorkExperienceViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LSS-90-fnD"/>
+                        <viewControllerLayoutGuide type="bottom" id="W24-mb-vdD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Os-2A-u5I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="工作经历" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg9-dG-azy">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh4-kN-hqh">
+                                <rect key="frame" x="20" y="148" width="335" height="144"/>
+                                <string key="text">2015年6月 - 2015年9月
+地点：扬州
+职位：iOS开发工程师
+江苏万润软件科技有限公司</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyq-SU-J4Y">
+                                <rect key="frame" x="20" y="320" width="335" height="182"/>
+                                <string key="text">参与项目：万润劳务 (Objective-C)   
+简介:内部员工管理/员工通讯录 
+负责: UI/数据库交互/HTML5
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="companyLabel" destination="Xh4-kN-hqh" id="pg4-h7-4Gb"/>
+                        <outlet property="experienceLabel" destination="nyq-SU-J4Y" id="aiE-Pe-vop"/>
+                        <outlet property="titleLabel" destination="Qg9-dG-azy" id="Tv9-ER-y0S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jPF-kc-LXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1360.5" y="1103.5"/>
+        </scene>
+        <!--Project Experience View Controller-->
+        <scene sceneID="wpv-3u-nnz">
+            <objects>
+                <viewController storyboardIdentifier="ProjectExperience" id="Nqz-J3-QOd" customClass="ProjectExperienceViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w5D-6g-dY3"/>
+                        <viewControllerLayoutGuide type="bottom" id="kKG-PK-8yT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0LE-7D-2Cb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="项目经验" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06K-0u-FXu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98K-FO-v3M">
+                                <rect key="frame" x="8" y="96" width="358" height="257"/>
+                                <string key="text">WeiDo (Swift) 2016.01-2016.03
+
+简介：娱乐社交/新闻/微博/视频/游记/附近/图片
+核心技术：1.架构：MVC+DAO 主纯代码+少量Xib/Storyborad
+2.CocoaPods/框架MJRefresh、Alamofire、SDWebImage、SVProgressHUD、AMap2DMap 
+3.Tableview、Collectionview的cell复杂定制
+4.AVCatpure二维码/CoreLocation定位/motion摇一摇/MPMoviePlayer视频/TextKit富文本
+5.服务器交互:新浪/去哪儿网/高德/百度/百思不得姐/天气 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBX-RX-sXS">
+                                <rect key="frame" x="8" y="396" width="358" height="241"/>
+                                <string key="text">基于XMPP的仿微信 (Objective-C)  2015.12-2016.01  
+简介:即时聊天/服务器交互/文件交互 
+核心技术：Storyboard/Openfire/XMPPvCardTempModule/XMPPRoster/XMPPMessageArchiving
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="projectoneLabel" destination="98K-FO-v3M" id="xrk-Vk-lRm"/>
+                        <outlet property="projecttwoLabel" destination="gBX-RX-sXS" id="Z91-43-t0b"/>
+                        <outlet property="titleLabel" destination="06K-0u-FXu" id="XJj-5i-Hvz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWh-0k-IHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843.5" y="1113.5"/>
+        </scene>
+        <!--Skills View Controller-->
+        <scene sceneID="sXJ-Ms-poJ">
+            <objects>
+                <viewController storyboardIdentifier="Skills" id="uZZ-au-xFD" customClass="SkillsViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zdJ-Y5-tAP"/>
+                        <viewControllerLayoutGuide type="bottom" id="QZs-KN-NCp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gto-YS-Dmv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-ci-INq">
+                                <rect key="frame" x="20" y="146" width="335" height="336"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PT-ZB-ajU">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="87"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Objective-C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-fj-tHE">
+                                        <rect key="frame" x="121" y="0.0" width="92" height="87"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HTML5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLQ-MF-s3N">
+                                        <rect key="frame" x="0.0" y="249" width="83" height="87"/>
+                                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Java" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT4-kC-dMr">
+                                        <rect key="frame" x="126" y="249" width="83" height="87"/>
+                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Python3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sk-NH-bYE">
+                                        <rect key="frame" x="252" y="0.0" width="83" height="87"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNA-2c-5Sk">
+                                        <rect key="frame" x="252" y="249" width="83" height="87"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的技能" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-bE-JMR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bgView" destination="lHt-ci-INq" id="oFr-KV-lco"/>
+                        <outlet property="titleLabel" destination="DqF-bE-JMR" id="4M3-xf-niD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="auY-jR-l1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330.5" y="1136.5"/>
+        </scene>
+        <!--Additional Info View Controller-->
+        <scene sceneID="MWM-Q2-bEm">
+            <objects>
+                <viewController storyboardIdentifier="AdditionalInfo" id="DA2-Ze-SDW" customClass="AdditionalInfoViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VEr-Sk-Re0"/>
+                        <viewControllerLayoutGuide type="bottom" id="S6k-rd-1Cr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="AdditionalInfo" id="mvE-VU-Y5v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="关于" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOD-oy-O6A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGX-pW-3PH">
+                                <rect key="frame" x="41" y="315" width="333" height="30"/>
+                                <state key="normal" title="我的Blog:点我">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myBlogClick:" destination="DA2-Ze-SDW" eventType="touchUpInside" id="fy9-l6-cTE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lj-F6-1xT">
+                                <rect key="frame" x="41" y="371" width="333" height="30"/>
+                                <state key="normal" title="我的Github:点我">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myGithubClick:" destination="DA2-Ze-SDW" eventType="touchUpInside" id="G9i-oO-iNz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jOD-oy-O6A" firstAttribute="centerX" secondItem="mvE-VU-Y5v" secondAttribute="centerX" id="0An-61-U0w"/>
+                            <constraint firstItem="7lj-F6-1xT" firstAttribute="centerX" secondItem="mvE-VU-Y5v" secondAttribute="centerX" id="f2F-WO-xta"/>
+                            <constraint firstItem="iGX-pW-3PH" firstAttribute="centerX" secondItem="mvE-VU-Y5v" secondAttribute="centerX" id="omF-jG-SqW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="myBlogBtn" destination="iGX-pW-3PH" id="iH8-qy-8Na"/>
+                        <outlet property="myGithubBtn" destination="7lj-F6-1xT" id="XJd-R5-2nf"/>
+                        <outlet property="titleLabel" destination="jOD-oy-O6A" id="FKS-xP-edW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaE-OL-zm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2787" y="1171"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="nUt-nD-snm">
+            <objects>
+                <viewController id="nAI-Um-oJh" customClass="MenuViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mc1-Pt-YDZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="DCX-YS-94P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yaR-Xf-V7E">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="70" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izl-r7-xfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="310"/>
+        </scene>
+        <!--Base Info View Controller-->
+        <scene sceneID="fwP-Jh-kq3">
+            <objects>
+                <viewController storyboardIdentifier="basicInfo" id="Cay-dv-kF0" customClass="BaseInfoViewController" customModule="MineResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OSi-rN-gaQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="g2t-DQ-TDt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yio-dP-ro5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="基本资料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J46-Hy-8jw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名：卢良潇" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-4W-OQV">
+                                <rect key="frame" x="136" y="254" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="性别:男" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edN-2m-TXi">
+                                <rect key="frame" x="159" y="323" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1994年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvh-Ws-BG1">
+                                <rect key="frame" x="159" y="406" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="应届毕业生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-sL-vgI">
+                                <rect key="frame" x="145" y="473" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="南京邮电大学通达学院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRD-CC-wxq">
+                                <rect key="frame" x="102" y="555" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-hb-sOU">
+                                <rect key="frame" x="105" y="87" width="164" height="145"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.60784313729999995" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="jvh-Ws-BG1" id="kJA-X5-J6S"/>
+                        <outlet property="nameLabel" destination="SGn-4W-OQV" id="HAZ-az-pk0"/>
+                        <outlet property="schoolLabel" destination="jRD-CC-wxq" id="9Tc-uj-xLn"/>
+                        <outlet property="sexLabel" destination="edN-2m-TXi" id="64f-y1-7nt"/>
+                        <outlet property="studentLabel" destination="uhA-sL-vgI" id="2yS-G9-STd"/>
+                        <outlet property="titleLabel" destination="J46-Hy-8jw" id="g2N-Zw-HBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMq-1m-zjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804.5" y="298.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="me" width="1242" height="1100"/>
+    </resources>
+</document>

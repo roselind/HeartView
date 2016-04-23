@@ -1,0 +1,10 @@
+platform :ios, "8.0"
+
+use_frameworks!
+
+pod "AFSoundManager"
+pod "SDCycleScrollView"
+pod "KGFloatingDrawer"
+pod "AFNetworking"
+pod "SDWebImage"
+pod "SVProgressHUD"

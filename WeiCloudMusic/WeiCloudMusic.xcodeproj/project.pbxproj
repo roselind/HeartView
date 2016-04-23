@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		144E337461286109AF4389F2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F781716205BA3E81B61716E /* Pods.framework */; };
+		B2312B531CA773FC003D0E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2312B521CA773FC003D0E53 /* AppDelegate.swift */; };
+		B2312B581CA773FC003D0E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2312B561CA773FC003D0E53 /* Main.storyboard */; };
+		B2312B5A1CA773FC003D0E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2312B591CA773FC003D0E53 /* Assets.xcassets */; };
+		B2312B5D1CA773FC003D0E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2312B5B1CA773FC003D0E53 /* LaunchScreen.storyboard */; };
+		B2312B681CA773FC003D0E53 /* WeiCloudMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2312B671CA773FC003D0E53 /* WeiCloudMusicTests.swift */; };
+		B2312B731CA773FC003D0E53 /* WeiCloudMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2312B721CA773FC003D0E53 /* WeiCloudMusicUITests.swift */; };
+		B250AFD21CA775240018DE5B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = B250AFCA1CA775240018DE5B /* UIView+Frame.m */; };
+		B250AFD31CA775240018DE5B /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B250AFCC1CA775240018DE5B /* YZDisplayTitleLabel.m */; };
+		B250AFD41CA775240018DE5B /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B250AFCE1CA775240018DE5B /* YZDisplayViewController.m */; };
+		B250AFD51CA775240018DE5B /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B250AFD11CA775240018DE5B /* YZFlowLayout.m */; };
+		B250AFD81CA7762E0018DE5B /* CMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250AFD61CA7762E0018DE5B /* CMHomeViewController.swift */; };
+		B250AFDB1CA776550018DE5B /* CMMyMusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250AFDA1CA776550018DE5B /* CMMyMusicTableViewController.swift */; };
+		B250AFDD1CA7766D0018DE5B /* CMFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250AFDC1CA7766D0018DE5B /* CMFriendTableViewController.swift */; };
+		B250AFDF1CA7767F0018DE5B /* CMMyAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250AFDE1CA7767F0018DE5B /* CMMyAccountTableViewController.swift */; };
+		B250AFE21CA779080018DE5B /* CMRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250AFE11CA779080018DE5B /* CMRecommendViewController.swift */; };
+		B250AFE41CA779220018DE5B /* CMMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250AFE31CA779220018DE5B /* CMMusicListViewController.swift */; };
+		B250AFE71CA779320018DE5B /* CMFMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250AFE51CA779320018DE5B /* CMFMViewController.swift */; };
+		B250AFE81CA779320018DE5B /* CMFMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B250AFE61CA779320018DE5B /* CMFMViewController.xib */; };
+		B250AFEB1CA7793F0018DE5B /* CMRankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B250AFE91CA7793F0018DE5B /* CMRankListViewController.swift */; };
+		B250AFEC1CA7793F0018DE5B /* CMRankListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B250AFEA1CA7793F0018DE5B /* CMRankListViewController.xib */; };
+		B2D7AB311CA8FFB600ACBC56 /* CMListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D7AB301CA8FFB600ACBC56 /* CMListTableViewController.swift */; };
+		B2D7AB521CA9183E00ACBC56 /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D7AB4F1CA9183E00ACBC56 /* AFAudioRouter.m */; };
+		B2D7AB531CA9183E00ACBC56 /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D7AB511CA9183E00ACBC56 /* AFSoundManager.m */; };
+		B2DC9BFE1CA785F80001A98E /* CMPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DC9BFD1CA785F80001A98E /* CMPlayViewController.swift */; };
+		B2F91FDB1CA8336900CD18F9 /* CMAlbumImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F91FDA1CA8336900CD18F9 /* CMAlbumImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2312B641CA773FC003D0E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2312B471CA773FC003D0E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2312B4E1CA773FC003D0E53;
+			remoteInfo = WeiCloudMusic;
+		};
+		B2312B6F1CA773FC003D0E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2312B471CA773FC003D0E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2312B4E1CA773FC003D0E53;
+			remoteInfo = WeiCloudMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		279B07A9E4E7D808166A09C2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		65C0D210A95A37D6F26A3886 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6F781716205BA3E81B61716E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2312B4F1CA773FC003D0E53 /* WeiCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2312B521CA773FC003D0E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2312B571CA773FC003D0E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2312B591CA773FC003D0E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2312B5C1CA773FC003D0E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2312B5E1CA773FC003D0E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2312B631CA773FC003D0E53 /* WeiCloudMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiCloudMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2312B671CA773FC003D0E53 /* WeiCloudMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiCloudMusicTests.swift; sourceTree = "<group>"; };
+		B2312B691CA773FC003D0E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2312B6E1CA773FC003D0E53 /* WeiCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2312B721CA773FC003D0E53 /* WeiCloudMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiCloudMusicUITests.swift; sourceTree = "<group>"; };
+		B2312B741CA773FC003D0E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B250AFBF1CA774960018DE5B /* Swift-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridge.h"; sourceTree = "<group>"; };
+		B250AFC91CA775240018DE5B /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		B250AFCA1CA775240018DE5B /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		B250AFCB1CA775240018DE5B /* YZDisplayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayTitleLabel.h; sourceTree = "<group>"; };
+		B250AFCC1CA775240018DE5B /* YZDisplayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayTitleLabel.m; sourceTree = "<group>"; };
+		B250AFCD1CA775240018DE5B /* YZDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewController.h; sourceTree = "<group>"; };
+		B250AFCE1CA775240018DE5B /* YZDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayViewController.m; sourceTree = "<group>"; };
+		B250AFCF1CA775240018DE5B /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
+		B250AFD01CA775240018DE5B /* YZFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZFlowLayout.h; sourceTree = "<group>"; };
+		B250AFD11CA775240018DE5B /* YZFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZFlowLayout.m; sourceTree = "<group>"; };
+		B250AFD61CA7762E0018DE5B /* CMHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMHomeViewController.swift; sourceTree = "<group>"; };
+		B250AFDA1CA776550018DE5B /* CMMyMusicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMMyMusicTableViewController.swift; sourceTree = "<group>"; };
+		B250AFDC1CA7766D0018DE5B /* CMFriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMFriendTableViewController.swift; sourceTree = "<group>"; };
+		B250AFDE1CA7767F0018DE5B /* CMMyAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMMyAccountTableViewController.swift; sourceTree = "<group>"; };
+		B250AFE11CA779080018DE5B /* CMRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMRecommendViewController.swift; sourceTree = "<group>"; };
+		B250AFE31CA779220018DE5B /* CMMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMMusicListViewController.swift; sourceTree = "<group>"; };
+		B250AFE51CA779320018DE5B /* CMFMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMFMViewController.swift; sourceTree = "<group>"; };
+		B250AFE61CA779320018DE5B /* CMFMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMFMViewController.xib; sourceTree = "<group>"; };
+		B250AFE91CA7793F0018DE5B /* CMRankListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMRankListViewController.swift; sourceTree = "<group>"; };
+		B250AFEA1CA7793F0018DE5B /* CMRankListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRankListViewController.xib; sourceTree = "<group>"; };
+		B2D7AB301CA8FFB600ACBC56 /* CMListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMListTableViewController.swift; sourceTree = "<group>"; };
+		B2D7AB4E1CA9183E00ACBC56 /* AFAudioRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAudioRouter.h; sourceTree = "<group>"; };
+		B2D7AB4F1CA9183E00ACBC56 /* AFAudioRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAudioRouter.m; sourceTree = "<group>"; };
+		B2D7AB501CA9183E00ACBC56 /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
+		B2D7AB511CA9183E00ACBC56 /* AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundManager.m; sourceTree = "<group>"; };
+		B2DC9BFD1CA785F80001A98E /* CMPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMPlayViewController.swift; sourceTree = "<group>"; };
+		B2F91FDA1CA8336900CD18F9 /* CMAlbumImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAlbumImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2312B4C1CA773FC003D0E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144E337461286109AF4389F2 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2312B601CA773FC003D0E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2312B6B1CA773FC003D0E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4902B134F267DF9C33ADC6FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				279B07A9E4E7D808166A09C2 /* Pods.debug.xcconfig */,
+				65C0D210A95A37D6F26A3886 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2312B461CA773FC003D0E53 = {
+			isa = PBXGroup;
+			children = (
+				B2312B511CA773FC003D0E53 /* WeiCloudMusic */,
+				B2312B661CA773FC003D0E53 /* WeiCloudMusicTests */,
+				B2312B711CA773FC003D0E53 /* WeiCloudMusicUITests */,
+				B2312B501CA773FC003D0E53 /* Products */,
+				4902B134F267DF9C33ADC6FC /* Pods */,
+				CD3E1AF22BF20472D5E50A08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2312B501CA773FC003D0E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2312B4F1CA773FC003D0E53 /* WeiCloudMusic.app */,
+				B2312B631CA773FC003D0E53 /* WeiCloudMusicTests.xctest */,
+				B2312B6E1CA773FC003D0E53 /* WeiCloudMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2312B511CA773FC003D0E53 /* WeiCloudMusic */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFC01CA775130018DE5B /* Classes */,
+				B2312B521CA773FC003D0E53 /* AppDelegate.swift */,
+				B2312B561CA773FC003D0E53 /* Main.storyboard */,
+				B2312B591CA773FC003D0E53 /* Assets.xcassets */,
+				B2312B5B1CA773FC003D0E53 /* LaunchScreen.storyboard */,
+				B2312B5E1CA773FC003D0E53 /* Info.plist */,
+				B250AFBF1CA774960018DE5B /* Swift-Bridge.h */,
+			);
+			path = WeiCloudMusic;
+			sourceTree = "<group>";
+		};
+		B2312B661CA773FC003D0E53 /* WeiCloudMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2312B671CA773FC003D0E53 /* WeiCloudMusicTests.swift */,
+				B2312B691CA773FC003D0E53 /* Info.plist */,
+			);
+			path = WeiCloudMusicTests;
+			sourceTree = "<group>";
+		};
+		B2312B711CA773FC003D0E53 /* WeiCloudMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2312B721CA773FC003D0E53 /* WeiCloudMusicUITests.swift */,
+				B2312B741CA773FC003D0E53 /* Info.plist */,
+			);
+			path = WeiCloudMusicUITests;
+			sourceTree = "<group>";
+		};
+		B250AFC01CA775130018DE5B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFC11CA775130018DE5B /* Friend */,
+				B250AFC21CA775130018DE5B /* Home */,
+				B250AFC31CA775130018DE5B /* Main */,
+				B250AFC41CA775130018DE5B /* MyAccount */,
+				B250AFC51CA775130018DE5B /* MyMusic */,
+				B250AFC61CA775130018DE5B /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B250AFC11CA775130018DE5B /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFDC1CA7766D0018DE5B /* CMFriendTableViewController.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		B250AFC21CA775130018DE5B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFE01CA778FB0018DE5B /* Controller */,
+				B250AFD61CA7762E0018DE5B /* CMHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B250AFC31CA775130018DE5B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC9BFD1CA785F80001A98E /* CMPlayViewController.swift */,
+				B2F91FDA1CA8336900CD18F9 /* CMAlbumImage.swift */,
+				B2D7AB301CA8FFB600ACBC56 /* CMListTableViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B250AFC41CA775130018DE5B /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFDE1CA7767F0018DE5B /* CMMyAccountTableViewController.swift */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		B250AFC51CA775130018DE5B /* MyMusic */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFDA1CA776550018DE5B /* CMMyMusicTableViewController.swift */,
+			);
+			path = MyMusic;
+			sourceTree = "<group>";
+		};
+		B250AFC61CA775130018DE5B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFC71CA775130018DE5B /* Lib */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B250AFC71CA775130018DE5B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B2D7AB4D1CA9183E00ACBC56 /* AFSoundManager */,
+				B250AFC81CA775240018DE5B /* YZDisplayViewController */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B250AFC81CA775240018DE5B /* YZDisplayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFC91CA775240018DE5B /* UIView+Frame.h */,
+				B250AFCA1CA775240018DE5B /* UIView+Frame.m */,
+				B250AFCB1CA775240018DE5B /* YZDisplayTitleLabel.h */,
+				B250AFCC1CA775240018DE5B /* YZDisplayTitleLabel.m */,
+				B250AFCD1CA775240018DE5B /* YZDisplayViewController.h */,
+				B250AFCE1CA775240018DE5B /* YZDisplayViewController.m */,
+				B250AFCF1CA775240018DE5B /* YZDisplayViewHeader.h */,
+				B250AFD01CA775240018DE5B /* YZFlowLayout.h */,
+				B250AFD11CA775240018DE5B /* YZFlowLayout.m */,
+			);
+			name = YZDisplayViewController;
+			path = ../YZDisplayViewController;
+			sourceTree = "<group>";
+		};
+		B250AFE01CA778FB0018DE5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B250AFE11CA779080018DE5B /* CMRecommendViewController.swift */,
+				B250AFE31CA779220018DE5B /* CMMusicListViewController.swift */,
+				B250AFE51CA779320018DE5B /* CMFMViewController.swift */,
+				B250AFE61CA779320018DE5B /* CMFMViewController.xib */,
+				B250AFE91CA7793F0018DE5B /* CMRankListViewController.swift */,
+				B250AFEA1CA7793F0018DE5B /* CMRankListViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B2D7AB4D1CA9183E00ACBC56 /* AFSoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				B2D7AB4E1CA9183E00ACBC56 /* AFAudioRouter.h */,
+				B2D7AB4F1CA9183E00ACBC56 /* AFAudioRouter.m */,
+				B2D7AB501CA9183E00ACBC56 /* AFSoundManager.h */,
+				B2D7AB511CA9183E00ACBC56 /* AFSoundManager.m */,
+			);
+			name = AFSoundManager;
+			path = WeiCloudMusic/Classes/Other/AFSoundManager;
+			sourceTree = SOURCE_ROOT;
+		};
+		CD3E1AF22BF20472D5E50A08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F781716205BA3E81B61716E /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2312B4E1CA773FC003D0E53 /* WeiCloudMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2312B771CA773FC003D0E53 /* Build configuration list for PBXNativeTarget "WeiCloudMusic" */;
+			buildPhases = (
+				5D0A3CE97361BD6A7FC4533E /* Check Pods Manifest.lock */,
+				B2312B4B1CA773FC003D0E53 /* Sources */,
+				B2312B4C1CA773FC003D0E53 /* Frameworks */,
+				B2312B4D1CA773FC003D0E53 /* Resources */,
+				B418A396B718130371D17AB4 /* Embed Pods Frameworks */,
+				E468A7EF390BF051CD39F62C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeiCloudMusic;
+			productName = WeiCloudMusic;
+			productReference = B2312B4F1CA773FC003D0E53 /* WeiCloudMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2312B621CA773FC003D0E53 /* WeiCloudMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2312B7A1CA773FC003D0E53 /* Build configuration list for PBXNativeTarget "WeiCloudMusicTests" */;
+			buildPhases = (
+				B2312B5F1CA773FC003D0E53 /* Sources */,
+				B2312B601CA773FC003D0E53 /* Frameworks */,
+				B2312B611CA773FC003D0E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2312B651CA773FC003D0E53 /* PBXTargetDependency */,
+			);
+			name = WeiCloudMusicTests;
+			productName = WeiCloudMusicTests;
+			productReference = B2312B631CA773FC003D0E53 /* WeiCloudMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B2312B6D1CA773FC003D0E53 /* WeiCloudMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2312B7D1CA773FC003D0E53 /* Build configuration list for PBXNativeTarget "WeiCloudMusicUITests" */;
+			buildPhases = (
+				B2312B6A1CA773FC003D0E53 /* Sources */,
+				B2312B6B1CA773FC003D0E53 /* Frameworks */,
+				B2312B6C1CA773FC003D0E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2312B701CA773FC003D0E53 /* PBXTargetDependency */,
+			);
+			name = WeiCloudMusicUITests;
+			productName = WeiCloudMusicUITests;
+			productReference = B2312B6E1CA773FC003D0E53 /* WeiCloudMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2312B471CA773FC003D0E53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "卢良潇";
+				TargetAttributes = {
+					B2312B4E1CA773FC003D0E53 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+					};
+					B2312B621CA773FC003D0E53 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+						TestTargetID = B2312B4E1CA773FC003D0E53;
+					};
+					B2312B6D1CA773FC003D0E53 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+						TestTargetID = B2312B4E1CA773FC003D0E53;
+					};
+				};
+			};
+			buildConfigurationList = B2312B4A1CA773FC003D0E53 /* Build configuration list for PBXProject "WeiCloudMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2312B461CA773FC003D0E53;
+			productRefGroup = B2312B501CA773FC003D0E53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2312B4E1CA773FC003D0E53 /* WeiCloudMusic */,
+				B2312B621CA773FC003D0E53 /* WeiCloudMusicTests */,
+				B2312B6D1CA773FC003D0E53 /* WeiCloudMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2312B4D1CA773FC003D0E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2312B5D1CA773FC003D0E53 /* LaunchScreen.storyboard in Resources */,
+				B250AFE81CA779320018DE5B /* CMFMViewController.xib in Resources */,
+				B2312B5A1CA773FC003D0E53 /* Assets.xcassets in Resources */,
+				B250AFEC1CA7793F0018DE5B /* CMRankListViewController.xib in Resources */,
+				B2312B581CA773FC003D0E53 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2312B611CA773FC003D0E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2312B6C1CA773FC003D0E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D0A3CE97361BD6A7FC4533E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B418A396B718130371D17AB4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E468A7EF390BF051CD39F62C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2312B4B1CA773FC003D0E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B250AFD21CA775240018DE5B /* UIView+Frame.m in Sources */,
+				B250AFE71CA779320018DE5B /* CMFMViewController.swift in Sources */,
+				B250AFDD1CA7766D0018DE5B /* CMFriendTableViewController.swift in Sources */,
+				B250AFEB1CA7793F0018DE5B /* CMRankListViewController.swift in Sources */,
+				B2F91FDB1CA8336900CD18F9 /* CMAlbumImage.swift in Sources */,
+				B250AFD51CA775240018DE5B /* YZFlowLayout.m in Sources */,
+				B2312B531CA773FC003D0E53 /* AppDelegate.swift in Sources */,
+				B250AFD31CA775240018DE5B /* YZDisplayTitleLabel.m in Sources */,
+				B250AFE41CA779220018DE5B /* CMMusicListViewController.swift in Sources */,
+				B250AFE21CA779080018DE5B /* CMRecommendViewController.swift in Sources */,
+				B2D7AB521CA9183E00ACBC56 /* AFAudioRouter.m in Sources */,
+				B250AFD41CA775240018DE5B /* YZDisplayViewController.m in Sources */,
+				B2DC9BFE1CA785F80001A98E /* CMPlayViewController.swift in Sources */,
+				B250AFDF1CA7767F0018DE5B /* CMMyAccountTableViewController.swift in Sources */,
+				B2D7AB531CA9183E00ACBC56 /* AFSoundManager.m in Sources */,
+				B2D7AB311CA8FFB600ACBC56 /* CMListTableViewController.swift in Sources */,
+				B250AFD81CA7762E0018DE5B /* CMHomeViewController.swift in Sources */,
+				B250AFDB1CA776550018DE5B /* CMMyMusicTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2312B5F1CA773FC003D0E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2312B681CA773FC003D0E53 /* WeiCloudMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2312B6A1CA773FC003D0E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2312B731CA773FC003D0E53 /* WeiCloudMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2312B651CA773FC003D0E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2312B4E1CA773FC003D0E53 /* WeiCloudMusic */;
+			targetProxy = B2312B641CA773FC003D0E53 /* PBXContainerItemProxy */;
+		};
+		B2312B701CA773FC003D0E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2312B4E1CA773FC003D0E53 /* WeiCloudMusic */;
+			targetProxy = B2312B6F1CA773FC003D0E53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2312B561CA773FC003D0E53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2312B571CA773FC003D0E53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2312B5B1CA773FC003D0E53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2312B5C1CA773FC003D0E53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2312B751CA773FC003D0E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2312B761CA773FC003D0E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2312B781CA773FC003D0E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279B07A9E4E7D808166A09C2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = WeiCloudMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.WeiCloudMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeiCloudMusic/Swift-Bridge.h";
+			};
+			name = Debug;
+		};
+		B2312B791CA773FC003D0E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C0D210A95A37D6F26A3886 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = WeiCloudMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.WeiCloudMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeiCloudMusic/Swift-Bridge.h";
+			};
+			name = Release;
+		};
+		B2312B7B1CA773FC003D0E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeiCloudMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.WeiCloudMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeiCloudMusic.app/WeiCloudMusic";
+			};
+			name = Debug;
+		};
+		B2312B7C1CA773FC003D0E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeiCloudMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.WeiCloudMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeiCloudMusic.app/WeiCloudMusic";
+			};
+			name = Release;
+		};
+		B2312B7E1CA773FC003D0E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeiCloudMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.WeiCloudMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WeiCloudMusic;
+			};
+			name = Debug;
+		};
+		B2312B7F1CA773FC003D0E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeiCloudMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.WeiCloudMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WeiCloudMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2312B4A1CA773FC003D0E53 /* Build configuration list for PBXProject "WeiCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2312B751CA773FC003D0E53 /* Debug */,
+				B2312B761CA773FC003D0E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2312B771CA773FC003D0E53 /* Build configuration list for PBXNativeTarget "WeiCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2312B781CA773FC003D0E53 /* Debug */,
+				B2312B791CA773FC003D0E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2312B7A1CA773FC003D0E53 /* Build configuration list for PBXNativeTarget "WeiCloudMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2312B7B1CA773FC003D0E53 /* Debug */,
+				B2312B7C1CA773FC003D0E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2312B7D1CA773FC003D0E53 /* Build configuration list for PBXNativeTarget "WeiCloudMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2312B7E1CA773FC003D0E53 /* Debug */,
+				B2312B7F1CA773FC003D0E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2312B471CA773FC003D0E53 /* Project object */;
+}

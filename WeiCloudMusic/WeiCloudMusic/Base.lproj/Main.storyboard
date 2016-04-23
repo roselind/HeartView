@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nuO-EG-V3a">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="AQK-hc-6pZ">
+            <objects>
+                <tabBarController id="nuO-EG-V3a" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OxC-AP-X9K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wPe-XE-L4r" kind="relationship" relationship="viewControllers" id="8fr-Y0-ngD"/>
+                        <segue destination="6un-1q-frm" kind="relationship" relationship="viewControllers" id="kbX-Cb-DHz"/>
+                        <segue destination="OX5-6K-Aoe" kind="relationship" relationship="viewControllers" id="lPT-P8-lC6"/>
+                        <segue destination="M8v-Va-age" kind="relationship" relationship="viewControllers" id="Ndp-aQ-Kz8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8e-aR-6KM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="631" y="-881"/>
+        </scene>
+        <!--发现音乐-->
+        <scene sceneID="JcW-m3-QS8">
+            <objects>
+                <navigationController id="wPe-XE-L4r" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现音乐" image="cm2_btm_icn_discovery" id="hvd-45-HuP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZS1-HM-5GW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6B6-F1-ibG" kind="relationship" relationship="rootViewController" id="tj4-xc-5ya"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Nc-ce-CSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="-1618"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="rR3-UT-rL5">
+            <objects>
+                <viewController id="6B6-F1-ibG" customClass="CMHomeViewController" customModule="WeiCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xM2-YC-4dU"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgc-CV-ULr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w8I-bn-7a8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="MPE-3P-7rI"/>
+                    <navigationItem key="navigationItem" id="roj-NZ-8Ai">
+                        <barButtonItem key="leftBarButtonItem" image="cm2_topbar_icn_mic" id="OO3-BE-8Lf"/>
+                        <barButtonItem key="rightBarButtonItem" image="cm2_topbar_icn_playing" id="ZMF-tL-p0h">
+                            <connections>
+                                <action selector="playClick:" destination="6B6-F1-ibG" id="71R-dx-aRh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCv-bM-ToH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458.5" y="-1605.5"/>
+        </scene>
+        <!--我的音乐-->
+        <scene sceneID="yAF-W7-aQP">
+            <objects>
+                <tableViewController id="Q7n-oh-UDY" customClass="CMMyMusicTableViewController" customModule="WeiCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oib-tr-lGv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SVT-Oh-fWL">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SVT-Oh-fWL" id="0se-LJ-KFl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Q7n-oh-UDY" id="EPW-Uv-4Tb"/>
+                            <outlet property="delegate" destination="Q7n-oh-UDY" id="2Sp-th-eyO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我的音乐" id="cOE-8i-1ye">
+                        <barButtonItem key="leftBarButtonItem" title="更多" id="T2x-nT-H4s"/>
+                        <barButtonItem key="rightBarButtonItem" image="cm2_topbar_icn_playing" id="T7Q-g1-bid"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdo-s7-QMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458.5" y="-875.5"/>
+        </scene>
+        <!--我的音乐-->
+        <scene sceneID="t5S-lx-t8f">
+            <objects>
+                <navigationController id="6un-1q-frm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的音乐" image="cm2_btm_icn_music" id="ofW-gO-gGx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TDs-O4-65Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Q7n-oh-UDY" kind="relationship" relationship="rootViewController" id="EjW-ss-8ZM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5CM-7e-0GY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="-898"/>
+        </scene>
+        <!--朋友-->
+        <scene sceneID="uJT-x7-ccN">
+            <objects>
+                <tableViewController id="NyY-3w-I86" customClass="CMFriendTableViewController" customModule="WeiCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fqJ-VR-eDl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mm0-rF-GtO">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mm0-rF-GtO" id="CE0-Xu-eEx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NyY-3w-I86" id="JRq-WV-Fx4"/>
+                            <outlet property="delegate" destination="NyY-3w-I86" id="zZh-nY-DQC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="朋友" id="J1j-GB-cIL">
+                        <barButtonItem key="leftBarButtonItem" image="cm2_topbar_icn_invite" id="cf6-5e-dqc"/>
+                        <barButtonItem key="rightBarButtonItem" image="cm2_topbar_icn_playing" id="79U-wA-Sxx"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ire-gZ-iaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458.5" y="-56.5"/>
+        </scene>
+        <!--朋友-->
+        <scene sceneID="9XH-fh-tu7">
+            <objects>
+                <navigationController id="OX5-6K-Aoe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="朋友" image="cm2_btm_icn_friend" id="XiQ-XM-Oy4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aUT-ku-mAm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NyY-3w-I86" kind="relationship" relationship="rootViewController" id="lbI-wu-cdP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPw-tz-QrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="-56"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="t6a-Iu-wgT">
+            <objects>
+                <viewController storyboardIdentifier="center" id="rJt-TV-INz" customClass="CMPlayViewController" customModule="WeiCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1jo-p5-rph"/>
+                        <viewControllerLayoutGuide type="bottom" id="hhg-32-UqA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Qq-tt-i1G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1Q-Yj-82f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZ1-63-zcG">
+                                <rect key="frame" x="24" y="622" width="30" height="37"/>
+                                <state key="normal" backgroundImage="cm2_btn_replay"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v03-eT-p0h">
+                                <rect key="frame" x="91" y="616" width="49" height="49"/>
+                                <state key="normal" backgroundImage="cm2_play_btn_prev"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bN-y9-3Jk">
+                                <rect key="frame" x="161" y="615" width="52" height="52"/>
+                                <state key="normal" image="cm2_btn_play"/>
+                                <state key="selected" image="cm2_btn_pause">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="cm2_btn_play_prs"/>
+                                <connections>
+                                    <action selector="playClick:" destination="rJt-TV-INz" eventType="touchUpInside" id="YfK-2x-af7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehm-mY-ibM">
+                                <rect key="frame" x="237" y="616" width="49" height="49"/>
+                                <state key="normal" backgroundImage="cm2_fm_btn_next"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkD-cF-2bU">
+                                <rect key="frame" x="309" y="621" width="40" height="40"/>
+                                <state key="normal" image="cm2_play_icn_love"/>
+                                <state key="selected" image="cm2_fm_btn_loved"/>
+                                <connections>
+                                    <action selector="likeClick:" destination="rJt-TV-INz" eventType="touchUpInside" id="JDW-jZ-Qif"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1A-RD-4vi">
+                                <rect key="frame" x="312" y="586" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cm2_play_disc-ip6" translatesAutoresizingMaskIntoConstraints="NO" id="LrQ-2s-rdd" customClass="CMAlbumImage" customModule="WeiCloudMusic" customModuleProvider="target">
+                                <rect key="frame" x="47" y="125" width="280" height="280"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cm2_play_needle_play-ip6" translatesAutoresizingMaskIntoConstraints="NO" id="kNw-U0-Dm4">
+                                <rect key="frame" x="139" y="-23" width="96" height="153"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hk-ns-Xwz">
+                                <rect key="frame" x="330" y="16" width="30" height="30"/>
+                                <state key="normal" backgroundImage="cm2_btm_icn_account_prs"/>
+                                <connections>
+                                    <action selector="meClick:" destination="rJt-TV-INz" eventType="touchUpInside" id="DaM-RE-XDr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="别问我是谁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLz-TU-oc7">
+                                <rect key="frame" x="133" y="20" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kU-gI-kb0">
+                                <rect key="frame" x="11" y="16" width="32" height="30"/>
+                                <state key="normal" backgroundImage="cm2_topbar_icn_playing"/>
+                                <connections>
+                                    <action selector="drawClick:" destination="rJt-TV-INz" eventType="touchUpInside" id="xQL-uo-4rQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmr-w2-Mri">
+                                <rect key="frame" x="24" y="586" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LsV-Ky-9iL">
+                                <rect key="frame" x="74" y="596" width="225" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LrQ-2s-rdd" firstAttribute="centerX" secondItem="9Qq-tt-i1G" secondAttribute="centerX" id="b2p-Ge-LpT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Bqx-LJ-819"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ablumImageView" destination="LrQ-2s-rdd" id="riC-KZ-Yq4"/>
+                        <outlet property="bgImage" destination="T1Q-Yj-82f" id="ajg-gL-lC5"/>
+                        <outlet property="cdPlayerImage" destination="kNw-U0-Dm4" id="qwW-W0-YID"/>
+                        <outlet property="endTime" destination="U1A-RD-4vi" id="j4y-20-VN5"/>
+                        <outlet property="likeBtn" destination="CkD-cF-2bU" id="VkJ-0r-KtZ"/>
+                        <outlet property="playBtn" destination="7bN-y9-3Jk" id="lL9-yx-UiX"/>
+                        <outlet property="progressView" destination="LsV-Ky-9iL" id="4jK-vi-fNK"/>
+                        <outlet property="startTime" destination="Fmr-w2-Mri" id="Z6T-yO-lrl"/>
+                        <outlet property="titleLabel" destination="ZLz-TU-oc7" id="pgZ-nk-14l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSq-Bu-bWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010.5" y="1497.5"/>
+        </scene>
+        <!--List Table View Controller-->
+        <scene sceneID="SKf-6D-eoV">
+            <objects>
+                <tableViewController storyboardIdentifier="leftvc" id="yrz-fS-jcA" customClass="CMListTableViewController" customModule="WeiCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KOQ-bb-QAW">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rX0-Do-sC4">
+                                <rect key="frame" x="0.0" y="28" width="200" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rX0-Do-sC4" id="gCd-gs-9yV">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yrz-fS-jcA" id="8fQ-35-gyV"/>
+                            <outlet property="delegate" destination="yrz-fS-jcA" id="0Z2-8l-Ewb"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="667"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4J-jc-K7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3106" y="1368"/>
+        </scene>
+        <!--我的账号-->
+        <scene sceneID="BSd-g3-fII">
+            <objects>
+                <tableViewController id="Pf2-oY-nfY" customClass="CMMyAccountTableViewController" customModule="WeiCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bcs-oT-j0S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9NN-Ei-GBw">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9NN-Ei-GBw" id="W6b-OJ-ZoZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Pf2-oY-nfY" id="wF6-il-BAV"/>
+                            <outlet property="delegate" destination="Pf2-oY-nfY" id="QAf-wC-uA4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我的账号" id="Go9-rH-HOm">
+                        <barButtonItem key="rightBarButtonItem" image="cm2_topbar_icn_playing" id="xeX-oG-tZE"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vt5-LC-3bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458.5" y="802.5"/>
+        </scene>
+        <!--账号-->
+        <scene sceneID="v2T-eC-BDx">
+            <objects>
+                <navigationController id="M8v-Va-age" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="账号" image="cm2_btm_icn_account" id="0Up-O2-pMT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E1K-Tl-Imf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pf2-oY-nfY" kind="relationship" relationship="rootViewController" id="nfl-6H-9D4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spU-NC-awk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cm2_btm_icn_account" width="28" height="28"/>
+        <image name="cm2_btm_icn_account_prs" width="28" height="28"/>
+        <image name="cm2_btm_icn_discovery" width="28" height="28"/>
+        <image name="cm2_btm_icn_friend" width="28" height="28"/>
+        <image name="cm2_btm_icn_music" width="28" height="28"/>
+        <image name="cm2_btn_pause" width="52" height="52"/>
+        <image name="cm2_btn_play" width="52" height="52"/>
+        <image name="cm2_btn_play_prs" width="52" height="52"/>
+        <image name="cm2_btn_replay" width="59" height="74"/>
+        <image name="cm2_fm_btn_loved" width="49" height="49"/>
+        <image name="cm2_fm_btn_next" width="49" height="49"/>
+        <image name="cm2_play_btn_prev" width="49" height="49"/>
+        <image name="cm2_play_disc-ip6" width="298" height="298"/>
+        <image name="cm2_play_icn_love" width="40" height="40"/>
+        <image name="cm2_play_needle_play-ip6" width="111" height="183"/>
+        <image name="cm2_topbar_icn_invite" width="28" height="28"/>
+        <image name="cm2_topbar_icn_mic" width="28" height="28"/>
+        <image name="cm2_topbar_icn_playing" width="28" height="28"/>
+    </resources>
+</document>
