@@ -1,4 +1,4 @@
-﻿---
+---
 title: UI分析利器 Reveal的破解及使用
 date: 2016-03-28
 ---
@@ -35,8 +35,8 @@ ok 大功告成
 ![此处输入图片的描述][6]
 
 
-  [1]: http://upload-images.jianshu.io/upload_images/1449048-4e7ea3b4f6181571.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
-  [2]: http://upload-images.jianshu.io/upload_images/1449048-4e7ea3b4f6181571.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+  [1]: http://revealapp.com/
+  [2]: http://pan.baidu.com/s/1bnc5wwn
   [3]: http://upload-images.jianshu.io/upload_images/1449048-4e7ea3b4f6181571.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
   [4]: http://upload-images.jianshu.io/upload_images/1449048-0e6a828ae033accb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
   [5]: http://upload-images.jianshu.io/upload_images/1449048-6145315f65f25c26.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240

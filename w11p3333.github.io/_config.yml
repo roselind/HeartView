@@ -7,7 +7,7 @@ title: AppleCatKay
 subtitle:
 description: iOS Coder 
 author: LuLiangXiao
-language: zh-Hans
+language: en
 timezone:
 
 # URL
@@ -40,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -63,7 +63,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: huno
+theme: next
+stylus:
+    compress: true
 
 # 在归档页面显示所有文章
 # 需要上面安装的 hexo-generator-archive 插件支持

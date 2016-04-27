@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20B71371CCCEF4B007C051B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B71361CCCEF4B007C051B /* AppDelegate.swift */; };
+		B20B71391CCCEF4B007C051B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B71381CCCEF4B007C051B /* ViewController.swift */; };
+		B20B713C1CCCEF4B007C051B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20B713A1CCCEF4B007C051B /* Main.storyboard */; };
+		B20B713E1CCCEF4B007C051B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20B713D1CCCEF4B007C051B /* Assets.xcassets */; };
+		B20B71411CCCEF4B007C051B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20B713F1CCCEF4B007C051B /* LaunchScreen.storyboard */; };
+		B20B714C1CCCEF4B007C051B /* KayProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B714B1CCCEF4B007C051B /* KayProfileTests.swift */; };
+		B20B71571CCCEF4B007C051B /* KayProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B71561CCCEF4B007C051B /* KayProfileUITests.swift */; };
+		B20B71671CCCEF9D007C051B /* UIImage+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B71661CCCEF9D007C051B /* UIImage+Category.swift */; };
+		B20B71691CCCF0FC007C051B /* KayProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B71681CCCF0FC007C051B /* KayProfileTableViewController.swift */; };
+		B20B716B1CCCF1D1007C051B /* KayTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B716A1CCCF1D1007C051B /* KayTableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20B71481CCCEF4B007C051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20B712B1CCCEF4B007C051B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20B71321CCCEF4B007C051B;
+			remoteInfo = KayProfile;
+		};
+		B20B71531CCCEF4B007C051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20B712B1CCCEF4B007C051B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20B71321CCCEF4B007C051B;
+			remoteInfo = KayProfile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B20B71331CCCEF4B007C051B /* KayProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KayProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B71361CCCEF4B007C051B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B20B71381CCCEF4B007C051B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B20B713B1CCCEF4B007C051B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20B713D1CCCEF4B007C051B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20B71401CCCEF4B007C051B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B20B71421CCCEF4B007C051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20B71471CCCEF4B007C051B /* KayProfileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KayProfileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B714B1CCCEF4B007C051B /* KayProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayProfileTests.swift; sourceTree = "<group>"; };
+		B20B714D1CCCEF4B007C051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20B71521CCCEF4B007C051B /* KayProfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KayProfileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B71561CCCEF4B007C051B /* KayProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayProfileUITests.swift; sourceTree = "<group>"; };
+		B20B71581CCCEF4B007C051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20B71661CCCEF9D007C051B /* UIImage+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Category.swift"; sourceTree = "<group>"; };
+		B20B71681CCCF0FC007C051B /* KayProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KayProfileTableViewController.swift; sourceTree = "<group>"; };
+		B20B716A1CCCF1D1007C051B /* KayTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KayTableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20B71301CCCEF4B007C051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B71441CCCEF4B007C051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B714F1CCCEF4B007C051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20B712A1CCCEF4B007C051B = {
+			isa = PBXGroup;
+			children = (
+				B20B71351CCCEF4B007C051B /* KayProfile */,
+				B20B714A1CCCEF4B007C051B /* KayProfileTests */,
+				B20B71551CCCEF4B007C051B /* KayProfileUITests */,
+				B20B71341CCCEF4B007C051B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20B71341CCCEF4B007C051B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20B71331CCCEF4B007C051B /* KayProfile.app */,
+				B20B71471CCCEF4B007C051B /* KayProfileTests.xctest */,
+				B20B71521CCCEF4B007C051B /* KayProfileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20B71351CCCEF4B007C051B /* KayProfile */ = {
+			isa = PBXGroup;
+			children = (
+				B20B71641CCCEF82007C051B /* KayProfile */,
+				B20B71361CCCEF4B007C051B /* AppDelegate.swift */,
+				B20B71381CCCEF4B007C051B /* ViewController.swift */,
+				B20B713A1CCCEF4B007C051B /* Main.storyboard */,
+				B20B713D1CCCEF4B007C051B /* Assets.xcassets */,
+				B20B713F1CCCEF4B007C051B /* LaunchScreen.storyboard */,
+				B20B71421CCCEF4B007C051B /* Info.plist */,
+			);
+			path = KayProfile;
+			sourceTree = "<group>";
+		};
+		B20B714A1CCCEF4B007C051B /* KayProfileTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20B714B1CCCEF4B007C051B /* KayProfileTests.swift */,
+				B20B714D1CCCEF4B007C051B /* Info.plist */,
+			);
+			path = KayProfileTests;
+			sourceTree = "<group>";
+		};
+		B20B71551CCCEF4B007C051B /* KayProfileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B20B71561CCCEF4B007C051B /* KayProfileUITests.swift */,
+				B20B71581CCCEF4B007C051B /* Info.plist */,
+			);
+			path = KayProfileUITests;
+			sourceTree = "<group>";
+		};
+		B20B71641CCCEF82007C051B /* KayProfile */ = {
+			isa = PBXGroup;
+			children = (
+				B20B71661CCCEF9D007C051B /* UIImage+Category.swift */,
+				B20B71681CCCF0FC007C051B /* KayProfileTableViewController.swift */,
+				B20B716A1CCCF1D1007C051B /* KayTableView.swift */,
+			);
+			path = KayProfile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20B71321CCCEF4B007C051B /* KayProfile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20B715B1CCCEF4B007C051B /* Build configuration list for PBXNativeTarget "KayProfile" */;
+			buildPhases = (
+				B20B712F1CCCEF4B007C051B /* Sources */,
+				B20B71301CCCEF4B007C051B /* Frameworks */,
+				B20B71311CCCEF4B007C051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KayProfile;
+			productName = KayProfile;
+			productReference = B20B71331CCCEF4B007C051B /* KayProfile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20B71461CCCEF4B007C051B /* KayProfileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20B715E1CCCEF4B007C051B /* Build configuration list for PBXNativeTarget "KayProfileTests" */;
+			buildPhases = (
+				B20B71431CCCEF4B007C051B /* Sources */,
+				B20B71441CCCEF4B007C051B /* Frameworks */,
+				B20B71451CCCEF4B007C051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20B71491CCCEF4B007C051B /* PBXTargetDependency */,
+			);
+			name = KayProfileTests;
+			productName = KayProfileTests;
+			productReference = B20B71471CCCEF4B007C051B /* KayProfileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B20B71511CCCEF4B007C051B /* KayProfileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20B71611CCCEF4B007C051B /* Build configuration list for PBXNativeTarget "KayProfileUITests" */;
+			buildPhases = (
+				B20B714E1CCCEF4B007C051B /* Sources */,
+				B20B714F1CCCEF4B007C051B /* Frameworks */,
+				B20B71501CCCEF4B007C051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20B71541CCCEF4B007C051B /* PBXTargetDependency */,
+			);
+			name = KayProfileUITests;
+			productName = KayProfileUITests;
+			productReference = B20B71521CCCEF4B007C051B /* KayProfileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20B712B1CCCEF4B007C051B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "卢良潇";
+				TargetAttributes = {
+					B20B71321CCCEF4B007C051B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+					};
+					B20B71461CCCEF4B007C051B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+						TestTargetID = B20B71321CCCEF4B007C051B;
+					};
+					B20B71511CCCEF4B007C051B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+						TestTargetID = B20B71321CCCEF4B007C051B;
+					};
+				};
+			};
+			buildConfigurationList = B20B712E1CCCEF4B007C051B /* Build configuration list for PBXProject "KayProfile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20B712A1CCCEF4B007C051B;
+			productRefGroup = B20B71341CCCEF4B007C051B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20B71321CCCEF4B007C051B /* KayProfile */,
+				B20B71461CCCEF4B007C051B /* KayProfileTests */,
+				B20B71511CCCEF4B007C051B /* KayProfileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20B71311CCCEF4B007C051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B71411CCCEF4B007C051B /* LaunchScreen.storyboard in Resources */,
+				B20B713E1CCCEF4B007C051B /* Assets.xcassets in Resources */,
+				B20B713C1CCCEF4B007C051B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B71451CCCEF4B007C051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B71501CCCEF4B007C051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20B712F1CCCEF4B007C051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B71671CCCEF9D007C051B /* UIImage+Category.swift in Sources */,
+				B20B716B1CCCF1D1007C051B /* KayTableView.swift in Sources */,
+				B20B71391CCCEF4B007C051B /* ViewController.swift in Sources */,
+				B20B71371CCCEF4B007C051B /* AppDelegate.swift in Sources */,
+				B20B71691CCCF0FC007C051B /* KayProfileTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B71431CCCEF4B007C051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B714C1CCCEF4B007C051B /* KayProfileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B714E1CCCEF4B007C051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B71571CCCEF4B007C051B /* KayProfileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20B71491CCCEF4B007C051B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20B71321CCCEF4B007C051B /* KayProfile */;
+			targetProxy = B20B71481CCCEF4B007C051B /* PBXContainerItemProxy */;
+		};
+		B20B71541CCCEF4B007C051B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20B71321CCCEF4B007C051B /* KayProfile */;
+			targetProxy = B20B71531CCCEF4B007C051B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B20B713A1CCCEF4B007C051B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20B713B1CCCEF4B007C051B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B20B713F1CCCEF4B007C051B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20B71401CCCEF4B007C051B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B20B71591CCCEF4B007C051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20B715A1CCCEF4B007C051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20B715C1CCCEF4B007C051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KayProfile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayProfile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B20B715D1CCCEF4B007C051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KayProfile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayProfile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B20B715F1CCCEF4B007C051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KayProfileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayProfileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KayProfile.app/KayProfile";
+			};
+			name = Debug;
+		};
+		B20B71601CCCEF4B007C051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KayProfileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayProfileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KayProfile.app/KayProfile";
+			};
+			name = Release;
+		};
+		B20B71621CCCEF4B007C051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KayProfileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayProfileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KayProfile;
+			};
+			name = Debug;
+		};
+		B20B71631CCCEF4B007C051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KayProfileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayProfileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KayProfile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20B712E1CCCEF4B007C051B /* Build configuration list for PBXProject "KayProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B71591CCCEF4B007C051B /* Debug */,
+				B20B715A1CCCEF4B007C051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20B715B1CCCEF4B007C051B /* Build configuration list for PBXNativeTarget "KayProfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B715C1CCCEF4B007C051B /* Debug */,
+				B20B715D1CCCEF4B007C051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B20B715E1CCCEF4B007C051B /* Build configuration list for PBXNativeTarget "KayProfileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B715F1CCCEF4B007C051B /* Debug */,
+				B20B71601CCCEF4B007C051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B20B71611CCCEF4B007C051B /* Build configuration list for PBXNativeTarget "KayProfileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B71621CCCEF4B007C051B /* Debug */,
+				B20B71631CCCEF4B007C051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20B712B1CCCEF4B007C051B /* Project object */;
+}
