@@ -317,7 +317,7 @@ NSString *const HomeViewID = @"HomeViewID";
 
 - (void)setViewWithHomeItems:(HomeModel *)item atIndex:(NSInteger)index
 {
-
+    [self setViewWithHomeItem:item atIndex:index inViewController:nil];
 
 }
 
@@ -325,18 +325,18 @@ NSString *const HomeViewID = @"HomeViewID";
 - (void)setViewWithHomeItem:(HomeModel *)item atIndex:(NSInteger)index inViewController:(BaseViewController *)parentViewController {
     self.viewIndex = index;
     self.parentViewController = parentViewController;
-    [_coverView mlb_sd_setImageWithURL:homeItem.imageURL placeholderImageName:@"home_cover_placeholder"];
-    _titleLabel.text = homeItem.authorName;
+    [_coverView mlb_sd_setImageWithURL:item.imageURL placeholderImageName:@"home_cover_placeholder"];
+    _titleLabel.text = item.authorName;
     _weatherView.image = [UIImage imageNamed:@"light_rain"];
     _temperatureLabel.text = @"6℃";
     _locationLabel.text = @"杭州";
-    _dateLabel.text = [MLBUtilities stringDateFormatWithddMMMyyyyEEEByNormalDateString:homeItem.makeTime];
+    _dateLabel.text = [MLBUtilities stringDateFormatWithddMMMyyyyEEEByNormalDateString:item.makeTime];
     
-    _contentTextView.attributedText = [MLBUtilities mlb_attributedStringWithText:homeItem.content lineSpacing:10 font:_contentTextView.font textColor:_contentTextView.textColor];
+    _contentTextView.attributedText = [MLBUtilities mlb_attributedStringWithText:item.content lineSpacing:10 font:_contentTextView.font textColor:_contentTextView.textColor];
     
     _textViewHeightConstraint.equalTo(@(ceilf([MLBUtilities mlb_rectWithAttributedString:_contentTextView.attributedText size:CGSizeMake((SCREEN_WIDTH - 24 - 12), CGFLOAT_MAX)].size.height) + 50));
     
-    _volLabel.text = homeItem.title;
+    _volLabel.text = item.title;
     _scrollView.contentOffset = CGPointZero;
     
     // 如果是-1，说明是单个视图界面，则显示按钮上的图片和点赞数
@@ -346,7 +346,7 @@ NSString *const HomeViewID = @"HomeViewID";
         [_likeButton setImage:[UIImage imageNamed:@"like_normal"] forState:UIControlStateNormal];
         [_likeButton setImage:[UIImage imageNamed:@"like_selected"] forState:UIControlStateSelected];
         
-        _likeNumLabel.text = [@(homeItem.praiseNum) stringValue];
+        _likeNumLabel.text = [@(item.praiseNum) stringValue];
     }
 }
 
