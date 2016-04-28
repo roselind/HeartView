@@ -7,8 +7,12 @@
 //
 
 #import "BaseViewController.h"
+#import "PopMenu.h"
 
 @interface BaseViewController ()
+
+@property (strong, nonatomic) YLImageView *playerView;
+@property (strong, nonatomic) PopMenu *popMenu;
 
 @end
 
@@ -40,19 +44,51 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+- (void)showPopMenuViewWithMenuSelectedBlock:(MenuSelectedBlock)block {
+    if (!_popMenu) {
+        NSArray *imgNames = @[@"more_wechat", @"more_moments", @"more_sina", @"more_qq", @"more_link", @"more_collection"];
+        NSArray *titles = @[@"微信好友", @"朋友圈", @"微博", @"QQ", @"复制链接", @"收藏"];
+        NSArray *colors = @[[UIColor colorWithRGBHex:0x70E08D],
+                            [UIColor colorWithRGBHex:0x70E08D],
+                            [UIColor colorWithRGBHex:0xFF8467],
+                            [UIColor colorWithRGBHex:0x49AFD6],
+                            [UIColor colorWithRGBHex:0x659AD9],
+                            [UIColor colorWithRGBHex:0xF6CC41]];
+        NSMutableArray *items = [NSMutableArray arrayWithCapacity:imgNames.count];
+        for (NSInteger i = 0; i < imgNames.count; i++) {
+            MenuItem *item = [[MenuItem alloc] initWithTitle:titles[i] iconName:imgNames[i] glowColor:colors[i] index:i];
+            [items addObject:item];
+        }
+        
+        _popMenu = [[PopMenu alloc] initWithFrame:kKeyWindow.bounds items:items];
+        _popMenu.menuAnimationType = kPopMenuAnimationTypeSina;
+        _popMenu.perRowItemCount = 1;
+        _popMenu.didSelectedItemCompletion = ^(MenuItem *selectedItem) {
+            if (block) {
+                block((MenuType)selectedItem.index);
+            }
+        };
+    }
+    
+    [_popMenu showMenuAtView:kKeyWindow];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (void)blowUpImage:(UIImage *)image referenceRect:(CGRect)referenceRect referenceView:(UIView *)referenceView {
+    // Create image info
+    JTSImageInfo *imageInfo = [[JTSImageInfo alloc] init];
+    imageInfo.image = image;
+    imageInfo.referenceRect = referenceRect;
+    imageInfo.referenceView = referenceView;
+    
+    // Setup view controller
+    JTSImageViewController *imageViewer = [[JTSImageViewController alloc] initWithImageInfo:imageInfo mode:JTSImageViewControllerMode_Image backgroundStyle:JTSImageViewControllerBackgroundOption_Blurred];
+    
+    // Present the view controller.
+    [imageViewer showFromViewController:kKeyWindow.rootViewController transition:JTSImageViewControllerTransition_FromOriginalPosition];
 }
-*/
 
 @end

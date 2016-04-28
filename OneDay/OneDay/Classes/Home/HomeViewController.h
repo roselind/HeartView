@@ -7,6 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import "HomeView.h"
+#import "HomeModel.h"
 
 @interface HomeViewController : BaseViewController
 
