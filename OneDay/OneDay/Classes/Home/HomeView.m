@@ -12,6 +12,7 @@
 
 NSString *const HomeViewID = @"HomeViewID";
 
+
 @interface HomeView ()
 
 @property (strong, nonatomic) UIScrollView *scrollView;
@@ -79,6 +80,7 @@ NSString *const HomeViewID = @"HomeViewID";
         return;
     }
     
+    
     self.backgroundColor = [UIColor clearColor];
     
     _scrollView = ({
@@ -91,56 +93,7 @@ NSString *const HomeViewID = @"HomeViewID";
         
         scrollView;
     });
-    
-    _diaryButton = ({
-        UIButton *button = [MLBUIFactory buttonWithImageName:nil highlightImageName:nil target:self action:@selector(diaryButtonClicked)];
-        [_scrollView addSubview:button];
-        [button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.sizeOffset(CGSizeMake(66, 44));
-            make.left.equalTo(_scrollView).offset(8);
-            make.bottom.equalTo(self).offset(-73);
-        }];
-        
-        button;
-    });
-    
-    _moreButton = ({
-        UIButton *button = [MLBUIFactory buttonWithImageName:nil highlightImageName:nil target:self action:@selector(moreButtonClicked)];
-        [_scrollView addSubview:button];
-        [button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.height.equalTo(@44);
-            make.right.equalTo(_scrollView).offset(-8);
-            make.bottom.equalTo(_diaryButton);
-        }];
-        
-        button;
-    });
-    
-    _likeNumLabel = ({
-        UILabel *label = [UILabel new];
-        label.textColor = MLBDarkGrayTextColor;
-        label.font = FontWithSize(11);
-        [_scrollView addSubview:label];
-        [label mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.height.equalTo(@44);
-            make.right.equalTo(_moreButton.mas_left);
-            make.bottom.equalTo(_diaryButton);
-        }];
-        
-        label;
-    });
-    
-    _likeButton = ({
-        UIButton *button = [MLBUIFactory buttonWithImageName:nil highlightImageName:nil target:self action:@selector(likeButtonClicked)];
-        [_scrollView addSubview:button];
-        [button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.height.equalTo(@44);
-            make.right.equalTo(_likeNumLabel.mas_left);
-            make.bottom.equalTo(_diaryButton);
-        }];
-        
-        button;
-    });
+
     
     _contentView = ({
         UIView *view = [UIView new];
@@ -284,34 +237,15 @@ NSString *const HomeViewID = @"HomeViewID";
 
 #pragma mark - 点击方法
 
+//图片弹出
 - (void)coverTapped {
+ 
     if (self.parentViewController) {
         [self.parentViewController blowUpImage:_coverView.image referenceRect:_coverView.frame referenceView:_coverView.superview];
     }
-}
 
-- (void)diaryButtonClicked {
-    if (_clickedButton) {
-        _clickedButton(ActionTypeDiary);
-    }
+    
 }
-
-- (void)likeButtonClicked {
-    if (_clickedButton) {
-        _clickedButton(ActionTypePraise);
-    }
-}
-
-- (void)moreButtonClicked {
-    if (_clickedButton) {
-        _clickedButton(ActionTypeMore);
-    } else if (self.parentViewController) {
-        [self.parentViewController showPopMenuViewWithMenuSelectedBlock:^(MenuType menuType) {
-            DDLogDebug(@"menuType = %ld", menuType);
-        }];
-    }
-}
-
 
 #pragma mark - 设置数据方法
 
@@ -323,6 +257,7 @@ NSString *const HomeViewID = @"HomeViewID";
 
 
 - (void)setViewWithHomeItem:(HomeModel *)item atIndex:(NSInteger)index inViewController:(BaseViewController *)parentViewController {
+
     self.viewIndex = index;
     self.parentViewController = parentViewController;
     [_coverView mlb_sd_setImageWithURL:item.imageURL placeholderImageName:@"home_cover_placeholder"];
@@ -333,11 +268,12 @@ NSString *const HomeViewID = @"HomeViewID";
     _dateLabel.text = [MLBUtilities stringDateFormatWithddMMMyyyyEEEByNormalDateString:item.makeTime];
     
     _contentTextView.attributedText = [MLBUtilities mlb_attributedStringWithText:item.content lineSpacing:10 font:_contentTextView.font textColor:_contentTextView.textColor];
-    
+
     _textViewHeightConstraint.equalTo(@(ceilf([MLBUtilities mlb_rectWithAttributedString:_contentTextView.attributedText size:CGSizeMake((SCREEN_WIDTH - 24 - 12), CGFLOAT_MAX)].size.height) + 50));
     
     _volLabel.text = item.title;
     _scrollView.contentOffset = CGPointZero;
+    
     
     // 如果是-1，说明是单个视图界面，则显示按钮上的图片和点赞数
     if (index == -1) {
@@ -351,13 +287,5 @@ NSString *const HomeViewID = @"HomeViewID";
 }
 
 
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end

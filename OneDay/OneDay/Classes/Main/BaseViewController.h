@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeView.h"
 
 
 typedef NS_ENUM(NSUInteger, MenuType) {
@@ -19,6 +20,7 @@ typedef NS_ENUM(NSUInteger, MenuType) {
 };
 
 typedef void(^MenuSelectedBlock)(MenuType menuType);
+
 
 
 @interface BaseViewController : UIViewController

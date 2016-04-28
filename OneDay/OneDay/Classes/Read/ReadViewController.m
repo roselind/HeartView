@@ -7,8 +7,16 @@
 //
 
 #import "ReadViewController.h"
+#import <SDCycleScrollView/SDCycleScrollView.h>
 
-@interface ReadViewController ()
+
+@interface ReadViewController ()<GMCPagingScrollViewDataSource, GMCPagingScrollViewDelegate> {
+    AAPullToRefresh *pullToRefreshLeft;
+    AAPullToRefresh *pullToRefreshRight;
+}
+@property (strong, nonatomic) SDCycleScrollView *carouselView;
+@property (strong, nonatomic) GMCPagingScrollView *pagingScrollView;
+
 
 @end
 

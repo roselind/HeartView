@@ -11,17 +11,19 @@
 
 
 @interface HomeViewController () <GMCPagingScrollViewDataSource,GMCPagingScrollViewDelegate,CLLocationManagerDelegate>{
+    
     AAPullToRefresh *pullToRefreshLeft;
     AAPullToRefresh *pullToRefreshRight;
-
+    HomeView *homeview;
 }
 
 @property (strong, nonatomic) GMCPagingScrollView *pagingScrollView;
 @property (strong, nonatomic) UIButton *diaryButton;
 @property (strong, nonatomic) UIButton *likeButton;
 @property (strong, nonatomic) UILabel *likeNumLabel;
+@property (assign, nonatomic) NSUInteger likeNum;
 @property (strong, nonatomic) UIButton *moreButton;
-
+//数据源
 @property (strong, nonatomic) NSArray *dataSource;
 
 @end
@@ -38,22 +40,25 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+
+    [self setupView];
+    [self setButtons];
+    [self loadCache];
+    [self requestHomeMore];
+  
+        // Do any additional setup after loading the view.
+}
+
+//设置主视图
+- (void)setupView
+{
+    //设置标题
     self.edgesForExtendedLayout = UIRectEdgeAll;
     
     UIImageView *titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nav_home_title"]];
-      self.navigationItem.titleView = titleView;
-
-    [self setupView];
-    [self loadCache];
-    [self requestHomeMore];
-    // Do any additional setup after loading the view.
-}
-
-- (void)setupView
-{
-
+    self.navigationItem.titleView = titleView;
+    
+    //添加scrollview
     __weak typeof (self) weakSelf = self;
     _pagingScrollView = ({
         GMCPagingScrollView *pagingScrollView = [GMCPagingScrollView new];
@@ -92,9 +97,17 @@
     });
     
     
+    
+}
+
+//设置按钮
+- (void)setButtons
+{
+
+    
     _diaryButton = ({
         UIButton *button = [MLBUIFactory buttonWithImageName:@"diary_normal" highlightImageName:nil target:self action:@selector(diaryButtonClicked)];
-        [_pagingScrollView insertSubview:button atIndex:0];
+        [_pagingScrollView addSubview:button];
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.sizeOffset(CGSizeMake(66, 44));
             make.left.equalTo(_pagingScrollView).offset(8);
@@ -106,7 +119,7 @@
     
     _moreButton = ({
         UIButton *button = [MLBUIFactory buttonWithImageName:@"share_image" highlightImageName:nil target:self action:@selector(moreButtonClicked)];
-        [_pagingScrollView insertSubview:button atIndex:1];
+        [_pagingScrollView addSubview:button];
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.height.equalTo(@44);
             make.right.equalTo(_pagingScrollView).offset(-8);
@@ -120,7 +133,7 @@
         UILabel *label = [UILabel new];
         label.textColor = MLBDarkGrayTextColor;
         label.font = FontWithSize(11);
-        [_pagingScrollView insertSubview:label atIndex:2];
+        [_pagingScrollView addSubview:label];
         [label mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.height.equalTo(@44);
             make.right.equalTo(_moreButton.mas_left);
@@ -132,7 +145,8 @@
     
     _likeButton = ({
         UIButton *button = [MLBUIFactory buttonWithImageName:@"like_normal" selectedImageName:@"like_selected" target:self action:@selector(likeButtonClicked)];
-        [_pagingScrollView insertSubview:button atIndex:3];
+        [_pagingScrollView addSubview:button];
+        button.selected = NO;
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
             make.width.height.equalTo(@44);
             make.right.equalTo(_likeNumLabel.mas_left);
@@ -141,11 +155,13 @@
         
         button;
     });
-
     
+
 }
 
-
+/**
+ *  加载缓存
+ */
 - (void)loadCache
 {
     id cacheItems = [NSKeyedUnarchiver unarchiveObjectWithFile:MLBCacheHomeItemFilePath];
@@ -164,8 +180,8 @@
 
 - (void)updateLikeNumLabelTextWithItemIndex:(NSInteger)index {
  
-    _likeNumLabel.text = [@([self homeItemAtIndex:index].praiseNum) stringValue];
- 
+    _likeNum = [self homeItemAtIndex:index].praiseNum;
+    _likeNumLabel.text = [@(_likeNum) stringValue];
 }
 
 
@@ -202,17 +218,32 @@
 }
 
 - (void)diaryButtonClicked {
+     NSLog(@"点击");
  //   [self presentLoginOptsViewController];
 }
 
 - (void)likeButtonClicked {
     
+    if (_likeButton.selected) {
+        _likeButton.selected = NO;
+        _likeNum -= 1;
+    }
+    else
+    {
+        _likeNum += 1;
+        _likeButton.selected = YES;
+    }
+    
+    _likeNumLabel.text = [@(_likeNum) stringValue];
+ 
+    
 }
 
 - (void)moreButtonClicked {
-//    [self showPopMenuViewWithMenuSelectedBlock:^(MLBPopMenuType menuType) {
-//        DDLogDebug(@"menuType = %ld", menuType);
-//    }];
+    NSLog(@"点击");
+    [self showPopMenuViewWithMenuSelectedBlock:^(MenuType menuType) {
+        DDLogDebug(@"menuType = %ld", menuType);
+    }];
 }
     
 # pragma mark - 网络请求
@@ -277,6 +308,9 @@
     DDLogDebug(@"locations = %@", locations);
     
 }
+
+
+
 
 
 

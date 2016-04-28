@@ -76,7 +76,6 @@
 }
 
 
-
 - (void)blowUpImage:(UIImage *)image referenceRect:(CGRect)referenceRect referenceView:(UIView *)referenceView {
     // Create image info
     JTSImageInfo *imageInfo = [[JTSImageInfo alloc] init];

@@ -337,8 +337,9 @@
 		B2FA39E91CCFBF4B00503E4D /* Read */ = {
 			isa = PBXGroup;
 			children = (
-				B2FA39FE1CD049BB00503E4D /* ReadViewController.h */,
-				B2FA39FF1CD049BB00503E4D /* ReadViewController.m */,
+				B2FA3A811CD202CF00503E4D /* View */,
+				B2FA3A801CD202C800503E4D /* Controller */,
+				B2FA3A7F1CD202C200503E4D /* Model */,
 			);
 			path = Read;
 			sourceTree = "<group>";
@@ -538,6 +539,29 @@
 				B2FA3A7D1CD1077600503E4D /* HomeModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B2FA3A7F1CD202C200503E4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B2FA3A801CD202C800503E4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2FA39FE1CD049BB00503E4D /* ReadViewController.h */,
+				B2FA39FF1CD049BB00503E4D /* ReadViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B2FA3A811CD202CF00503E4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		E008D61CB330B77CD7727328 /* Frameworks */ = {

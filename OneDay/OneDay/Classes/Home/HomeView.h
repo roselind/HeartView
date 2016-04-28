@@ -12,7 +12,10 @@ FOUNDATION_EXPORT NSString *const HomeViewID;
 
 @class HomeModel;
 
+
 @interface HomeView : BaseView
+
+
 
 
 @property (nonatomic, copy) void (^clickedButton)(ActionType type);
@@ -21,5 +24,5 @@ FOUNDATION_EXPORT NSString *const HomeViewID;
 
 - (void)setViewWithHomeItems:(HomeModel *)item atIndex:(NSInteger)index inViewController:(BaseViewController *)parentViewController;
 
-
+- (void)coverTapped;
 @end
