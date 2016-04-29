@@ -1,1 +1,0 @@
-../../../GMCPagingScrollView/GMCPagingScrollView/GMCPagingScrollView.h
