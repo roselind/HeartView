@@ -1,0 +1,3 @@
+[submodule "Vagrant/ci123/html/CILibs"]
+	path = Vagrant/ci123/html/CILibs
+	url = git@git.nibaguai.com:nbg_service/CILibs.git

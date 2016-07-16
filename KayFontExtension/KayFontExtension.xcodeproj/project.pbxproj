@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2634A791CD7461E00068E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2634A781CD7461E00068E7A /* main.m */; };
+		B2634A7C1CD7461E00068E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2634A7B1CD7461E00068E7A /* AppDelegate.m */; };
+		B2634A7F1CD7461E00068E7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2634A7E1CD7461E00068E7A /* ViewController.m */; };
+		B2634A821CD7461E00068E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2634A801CD7461E00068E7A /* Main.storyboard */; };
+		B2634A841CD7461E00068E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2634A831CD7461E00068E7A /* Assets.xcassets */; };
+		B2634A871CD7461E00068E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2634A851CD7461E00068E7A /* LaunchScreen.storyboard */; };
+		B2634A921CD7461E00068E7A /* KayFontExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2634A911CD7461E00068E7A /* KayFontExtensionTests.m */; };
+		B2634A9D1CD7461E00068E7A /* KayFontExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2634A9C1CD7461E00068E7A /* KayFontExtensionUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2634A8E1CD7461E00068E7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2634A6C1CD7461E00068E7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2634A731CD7461E00068E7A;
+			remoteInfo = KayFontExtension;
+		};
+		B2634A991CD7461E00068E7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2634A6C1CD7461E00068E7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2634A731CD7461E00068E7A;
+			remoteInfo = KayFontExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2634A741CD7461E00068E7A /* KayFontExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KayFontExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2634A781CD7461E00068E7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2634A7A1CD7461E00068E7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2634A7B1CD7461E00068E7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2634A7D1CD7461E00068E7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B2634A7E1CD7461E00068E7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B2634A811CD7461E00068E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2634A831CD7461E00068E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2634A861CD7461E00068E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2634A881CD7461E00068E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2634A8D1CD7461E00068E7A /* KayFontExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KayFontExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2634A911CD7461E00068E7A /* KayFontExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KayFontExtensionTests.m; sourceTree = "<group>"; };
+		B2634A931CD7461E00068E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2634A981CD7461E00068E7A /* KayFontExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KayFontExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2634A9C1CD7461E00068E7A /* KayFontExtensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KayFontExtensionUITests.m; sourceTree = "<group>"; };
+		B2634A9E1CD7461E00068E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2634A711CD7461E00068E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2634A8A1CD7461E00068E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2634A951CD7461E00068E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2634A6B1CD7461E00068E7A = {
+			isa = PBXGroup;
+			children = (
+				B2634A761CD7461E00068E7A /* KayFontExtension */,
+				B2634A901CD7461E00068E7A /* KayFontExtensionTests */,
+				B2634A9B1CD7461E00068E7A /* KayFontExtensionUITests */,
+				B2634A751CD7461E00068E7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2634A751CD7461E00068E7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2634A741CD7461E00068E7A /* KayFontExtension.app */,
+				B2634A8D1CD7461E00068E7A /* KayFontExtensionTests.xctest */,
+				B2634A981CD7461E00068E7A /* KayFontExtensionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2634A761CD7461E00068E7A /* KayFontExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B2634A7A1CD7461E00068E7A /* AppDelegate.h */,
+				B2634A7B1CD7461E00068E7A /* AppDelegate.m */,
+				B2634A7D1CD7461E00068E7A /* ViewController.h */,
+				B2634A7E1CD7461E00068E7A /* ViewController.m */,
+				B2634A801CD7461E00068E7A /* Main.storyboard */,
+				B2634A831CD7461E00068E7A /* Assets.xcassets */,
+				B2634A851CD7461E00068E7A /* LaunchScreen.storyboard */,
+				B2634A881CD7461E00068E7A /* Info.plist */,
+				B2634A771CD7461E00068E7A /* Supporting Files */,
+			);
+			path = KayFontExtension;
+			sourceTree = "<group>";
+		};
+		B2634A771CD7461E00068E7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2634A781CD7461E00068E7A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2634A901CD7461E00068E7A /* KayFontExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2634A911CD7461E00068E7A /* KayFontExtensionTests.m */,
+				B2634A931CD7461E00068E7A /* Info.plist */,
+			);
+			path = KayFontExtensionTests;
+			sourceTree = "<group>";
+		};
+		B2634A9B1CD7461E00068E7A /* KayFontExtensionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2634A9C1CD7461E00068E7A /* KayFontExtensionUITests.m */,
+				B2634A9E1CD7461E00068E7A /* Info.plist */,
+			);
+			path = KayFontExtensionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2634A731CD7461E00068E7A /* KayFontExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2634AA11CD7461E00068E7A /* Build configuration list for PBXNativeTarget "KayFontExtension" */;
+			buildPhases = (
+				B2634A701CD7461E00068E7A /* Sources */,
+				B2634A711CD7461E00068E7A /* Frameworks */,
+				B2634A721CD7461E00068E7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KayFontExtension;
+			productName = KayFontExtension;
+			productReference = B2634A741CD7461E00068E7A /* KayFontExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2634A8C1CD7461E00068E7A /* KayFontExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2634AA41CD7461E00068E7A /* Build configuration list for PBXNativeTarget "KayFontExtensionTests" */;
+			buildPhases = (
+				B2634A891CD7461E00068E7A /* Sources */,
+				B2634A8A1CD7461E00068E7A /* Frameworks */,
+				B2634A8B1CD7461E00068E7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2634A8F1CD7461E00068E7A /* PBXTargetDependency */,
+			);
+			name = KayFontExtensionTests;
+			productName = KayFontExtensionTests;
+			productReference = B2634A8D1CD7461E00068E7A /* KayFontExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B2634A971CD7461E00068E7A /* KayFontExtensionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2634AA71CD7461E00068E7A /* Build configuration list for PBXNativeTarget "KayFontExtensionUITests" */;
+			buildPhases = (
+				B2634A941CD7461E00068E7A /* Sources */,
+				B2634A951CD7461E00068E7A /* Frameworks */,
+				B2634A961CD7461E00068E7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2634A9A1CD7461E00068E7A /* PBXTargetDependency */,
+			);
+			name = KayFontExtensionUITests;
+			productName = KayFontExtensionUITests;
+			productReference = B2634A981CD7461E00068E7A /* KayFontExtensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2634A6C1CD7461E00068E7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "卢良潇";
+				TargetAttributes = {
+					B2634A731CD7461E00068E7A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+					};
+					B2634A8C1CD7461E00068E7A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+						TestTargetID = B2634A731CD7461E00068E7A;
+					};
+					B2634A971CD7461E00068E7A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HQJ5Y44Q9H;
+						TestTargetID = B2634A731CD7461E00068E7A;
+					};
+				};
+			};
+			buildConfigurationList = B2634A6F1CD7461E00068E7A /* Build configuration list for PBXProject "KayFontExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2634A6B1CD7461E00068E7A;
+			productRefGroup = B2634A751CD7461E00068E7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2634A731CD7461E00068E7A /* KayFontExtension */,
+				B2634A8C1CD7461E00068E7A /* KayFontExtensionTests */,
+				B2634A971CD7461E00068E7A /* KayFontExtensionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2634A721CD7461E00068E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2634A871CD7461E00068E7A /* LaunchScreen.storyboard in Resources */,
+				B2634A841CD7461E00068E7A /* Assets.xcassets in Resources */,
+				B2634A821CD7461E00068E7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2634A8B1CD7461E00068E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2634A961CD7461E00068E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2634A701CD7461E00068E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2634A7F1CD7461E00068E7A /* ViewController.m in Sources */,
+				B2634A7C1CD7461E00068E7A /* AppDelegate.m in Sources */,
+				B2634A791CD7461E00068E7A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2634A891CD7461E00068E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2634A921CD7461E00068E7A /* KayFontExtensionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2634A941CD7461E00068E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2634A9D1CD7461E00068E7A /* KayFontExtensionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2634A8F1CD7461E00068E7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2634A731CD7461E00068E7A /* KayFontExtension */;
+			targetProxy = B2634A8E1CD7461E00068E7A /* PBXContainerItemProxy */;
+		};
+		B2634A9A1CD7461E00068E7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2634A731CD7461E00068E7A /* KayFontExtension */;
+			targetProxy = B2634A991CD7461E00068E7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2634A801CD7461E00068E7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2634A811CD7461E00068E7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2634A851CD7461E00068E7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2634A861CD7461E00068E7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2634A9F1CD7461E00068E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2634AA01CD7461E00068E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2634AA21CD7461E00068E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KayFontExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayFontExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2634AA31CD7461E00068E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KayFontExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayFontExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2634AA51CD7461E00068E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KayFontExtensionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayFontExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KayFontExtension.app/KayFontExtension";
+			};
+			name = Debug;
+		};
+		B2634AA61CD7461E00068E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KayFontExtensionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayFontExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KayFontExtension.app/KayFontExtension";
+			};
+			name = Release;
+		};
+		B2634AA81CD7461E00068E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KayFontExtensionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayFontExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KayFontExtension;
+			};
+			name = Debug;
+		};
+		B2634AA91CD7461E00068E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KayFontExtensionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llx.KayFontExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KayFontExtension;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2634A6F1CD7461E00068E7A /* Build configuration list for PBXProject "KayFontExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2634A9F1CD7461E00068E7A /* Debug */,
+				B2634AA01CD7461E00068E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2634AA11CD7461E00068E7A /* Build configuration list for PBXNativeTarget "KayFontExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2634AA21CD7461E00068E7A /* Debug */,
+				B2634AA31CD7461E00068E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2634AA41CD7461E00068E7A /* Build configuration list for PBXNativeTarget "KayFontExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2634AA51CD7461E00068E7A /* Debug */,
+				B2634AA61CD7461E00068E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2634AA71CD7461E00068E7A /* Build configuration list for PBXNativeTarget "KayFontExtensionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2634AA81CD7461E00068E7A /* Debug */,
+				B2634AA91CD7461E00068E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2634A6C1CD7461E00068E7A /* Project object */;
+}

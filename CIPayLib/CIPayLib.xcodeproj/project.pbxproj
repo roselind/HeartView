@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2AE98D31CFBD7FF0009880F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AE98D21CFBD7FF0009880F /* main.m */; };
+		B2AE98D61CFBD7FF0009880F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AE98D51CFBD7FF0009880F /* AppDelegate.m */; };
+		B2AE98D91CFBD7FF0009880F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AE98D81CFBD7FF0009880F /* ViewController.m */; };
+		B2AE98DC1CFBD7FF0009880F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AE98DA1CFBD7FF0009880F /* Main.storyboard */; };
+		B2AE98DE1CFBD7FF0009880F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AE98DD1CFBD7FF0009880F /* Assets.xcassets */; };
+		B2AE98E11CFBD7FF0009880F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AE98DF1CFBD7FF0009880F /* LaunchScreen.storyboard */; };
+		B2AE98EC1CFBD7FF0009880F /* CIPayLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AE98EB1CFBD7FF0009880F /* CIPayLibTests.m */; };
+		B2AE98F71CFBD7FF0009880F /* CIPayLibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AE98F61CFBD7FF0009880F /* CIPayLibUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2AE98E81CFBD7FF0009880F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2AE98C61CFBD7FF0009880F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2AE98CD1CFBD7FF0009880F;
+			remoteInfo = CIPayLib;
+		};
+		B2AE98F31CFBD7FF0009880F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2AE98C61CFBD7FF0009880F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2AE98CD1CFBD7FF0009880F;
+			remoteInfo = CIPayLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2AE98CE1CFBD7FF0009880F /* CIPayLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIPayLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AE98D21CFBD7FF0009880F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2AE98D41CFBD7FF0009880F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2AE98D51CFBD7FF0009880F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2AE98D71CFBD7FF0009880F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B2AE98D81CFBD7FF0009880F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B2AE98DB1CFBD7FF0009880F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2AE98DD1CFBD7FF0009880F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2AE98E01CFBD7FF0009880F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2AE98E21CFBD7FF0009880F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2AE98E71CFBD7FF0009880F /* CIPayLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIPayLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AE98EB1CFBD7FF0009880F /* CIPayLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIPayLibTests.m; sourceTree = "<group>"; };
+		B2AE98ED1CFBD7FF0009880F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2AE98F21CFBD7FF0009880F /* CIPayLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIPayLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AE98F61CFBD7FF0009880F /* CIPayLibUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIPayLibUITests.m; sourceTree = "<group>"; };
+		B2AE98F81CFBD7FF0009880F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2AE98CB1CFBD7FF0009880F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2AE98E41CFBD7FF0009880F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2AE98EF1CFBD7FF0009880F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2AE98C51CFBD7FF0009880F = {
+			isa = PBXGroup;
+			children = (
+				B2AE98D01CFBD7FF0009880F /* CIPayLib */,
+				B2AE98EA1CFBD7FF0009880F /* CIPayLibTests */,
+				B2AE98F51CFBD7FF0009880F /* CIPayLibUITests */,
+				B2AE98CF1CFBD7FF0009880F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2AE98CF1CFBD7FF0009880F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2AE98CE1CFBD7FF0009880F /* CIPayLib.app */,
+				B2AE98E71CFBD7FF0009880F /* CIPayLibTests.xctest */,
+				B2AE98F21CFBD7FF0009880F /* CIPayLibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2AE98D01CFBD7FF0009880F /* CIPayLib */ = {
+			isa = PBXGroup;
+			children = (
+				B2AE98D41CFBD7FF0009880F /* AppDelegate.h */,
+				B2AE98D51CFBD7FF0009880F /* AppDelegate.m */,
+				B2AE98D71CFBD7FF0009880F /* ViewController.h */,
+				B2AE98D81CFBD7FF0009880F /* ViewController.m */,
+				B2AE98DA1CFBD7FF0009880F /* Main.storyboard */,
+				B2AE98DD1CFBD7FF0009880F /* Assets.xcassets */,
+				B2AE98DF1CFBD7FF0009880F /* LaunchScreen.storyboard */,
+				B2AE98E21CFBD7FF0009880F /* Info.plist */,
+				B2AE98D11CFBD7FF0009880F /* Supporting Files */,
+			);
+			path = CIPayLib;
+			sourceTree = "<group>";
+		};
+		B2AE98D11CFBD7FF0009880F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2AE98D21CFBD7FF0009880F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2AE98EA1CFBD7FF0009880F /* CIPayLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2AE98EB1CFBD7FF0009880F /* CIPayLibTests.m */,
+				B2AE98ED1CFBD7FF0009880F /* Info.plist */,
+			);
+			path = CIPayLibTests;
+			sourceTree = "<group>";
+		};
+		B2AE98F51CFBD7FF0009880F /* CIPayLibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2AE98F61CFBD7FF0009880F /* CIPayLibUITests.m */,
+				B2AE98F81CFBD7FF0009880F /* Info.plist */,
+			);
+			path = CIPayLibUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2AE98CD1CFBD7FF0009880F /* CIPayLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2AE98FB1CFBD7FF0009880F /* Build configuration list for PBXNativeTarget "CIPayLib" */;
+			buildPhases = (
+				B2AE98CA1CFBD7FF0009880F /* Sources */,
+				B2AE98CB1CFBD7FF0009880F /* Frameworks */,
+				B2AE98CC1CFBD7FF0009880F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CIPayLib;
+			productName = CIPayLib;
+			productReference = B2AE98CE1CFBD7FF0009880F /* CIPayLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2AE98E61CFBD7FF0009880F /* CIPayLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2AE98FE1CFBD7FF0009880F /* Build configuration list for PBXNativeTarget "CIPayLibTests" */;
+			buildPhases = (
+				B2AE98E31CFBD7FF0009880F /* Sources */,
+				B2AE98E41CFBD7FF0009880F /* Frameworks */,
+				B2AE98E51CFBD7FF0009880F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2AE98E91CFBD7FF0009880F /* PBXTargetDependency */,
+			);
+			name = CIPayLibTests;
+			productName = CIPayLibTests;
+			productReference = B2AE98E71CFBD7FF0009880F /* CIPayLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B2AE98F11CFBD7FF0009880F /* CIPayLibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2AE99011CFBD7FF0009880F /* Build configuration list for PBXNativeTarget "CIPayLibUITests" */;
+			buildPhases = (
+				B2AE98EE1CFBD7FF0009880F /* Sources */,
+				B2AE98EF1CFBD7FF0009880F /* Frameworks */,
+				B2AE98F01CFBD7FF0009880F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2AE98F41CFBD7FF0009880F /* PBXTargetDependency */,
+			);
+			name = CIPayLibUITests;
+			productName = CIPayLibUITests;
+			productReference = B2AE98F21CFBD7FF0009880F /* CIPayLibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2AE98C61CFBD7FF0009880F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.girl.123;
+				TargetAttributes = {
+					B2AE98CD1CFBD7FF0009880F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B2AE98E61CFBD7FF0009880F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B2AE98CD1CFBD7FF0009880F;
+					};
+					B2AE98F11CFBD7FF0009880F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B2AE98CD1CFBD7FF0009880F;
+					};
+				};
+			};
+			buildConfigurationList = B2AE98C91CFBD7FF0009880F /* Build configuration list for PBXProject "CIPayLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2AE98C51CFBD7FF0009880F;
+			productRefGroup = B2AE98CF1CFBD7FF0009880F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2AE98CD1CFBD7FF0009880F /* CIPayLib */,
+				B2AE98E61CFBD7FF0009880F /* CIPayLibTests */,
+				B2AE98F11CFBD7FF0009880F /* CIPayLibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2AE98CC1CFBD7FF0009880F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2AE98E11CFBD7FF0009880F /* LaunchScreen.storyboard in Resources */,
+				B2AE98DE1CFBD7FF0009880F /* Assets.xcassets in Resources */,
+				B2AE98DC1CFBD7FF0009880F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2AE98E51CFBD7FF0009880F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2AE98F01CFBD7FF0009880F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2AE98CA1CFBD7FF0009880F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2AE98D91CFBD7FF0009880F /* ViewController.m in Sources */,
+				B2AE98D61CFBD7FF0009880F /* AppDelegate.m in Sources */,
+				B2AE98D31CFBD7FF0009880F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2AE98E31CFBD7FF0009880F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2AE98EC1CFBD7FF0009880F /* CIPayLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2AE98EE1CFBD7FF0009880F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2AE98F71CFBD7FF0009880F /* CIPayLibUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2AE98E91CFBD7FF0009880F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2AE98CD1CFBD7FF0009880F /* CIPayLib */;
+			targetProxy = B2AE98E81CFBD7FF0009880F /* PBXContainerItemProxy */;
+		};
+		B2AE98F41CFBD7FF0009880F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2AE98CD1CFBD7FF0009880F /* CIPayLib */;
+			targetProxy = B2AE98F31CFBD7FF0009880F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2AE98DA1CFBD7FF0009880F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2AE98DB1CFBD7FF0009880F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2AE98DF1CFBD7FF0009880F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2AE98E01CFBD7FF0009880F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2AE98F91CFBD7FF0009880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2AE98FA1CFBD7FF0009880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2AE98FC1CFBD7FF0009880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CIPayLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.girl.123.CIPayLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2AE98FD1CFBD7FF0009880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CIPayLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.girl.123.CIPayLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2AE98FF1CFBD7FF0009880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CIPayLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.girl.123.CIPayLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CIPayLib.app/CIPayLib";
+			};
+			name = Debug;
+		};
+		B2AE99001CFBD7FF0009880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CIPayLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.girl.123.CIPayLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CIPayLib.app/CIPayLib";
+			};
+			name = Release;
+		};
+		B2AE99021CFBD7FF0009880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CIPayLibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.girl.123.CIPayLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CIPayLib;
+			};
+			name = Debug;
+		};
+		B2AE99031CFBD7FF0009880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CIPayLibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.girl.123.CIPayLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CIPayLib;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2AE98C91CFBD7FF0009880F /* Build configuration list for PBXProject "CIPayLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2AE98F91CFBD7FF0009880F /* Debug */,
+				B2AE98FA1CFBD7FF0009880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2AE98FB1CFBD7FF0009880F /* Build configuration list for PBXNativeTarget "CIPayLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2AE98FC1CFBD7FF0009880F /* Debug */,
+				B2AE98FD1CFBD7FF0009880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2AE98FE1CFBD7FF0009880F /* Build configuration list for PBXNativeTarget "CIPayLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2AE98FF1CFBD7FF0009880F /* Debug */,
+				B2AE99001CFBD7FF0009880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2AE99011CFBD7FF0009880F /* Build configuration list for PBXNativeTarget "CIPayLibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2AE99021CFBD7FF0009880F /* Debug */,
+				B2AE99031CFBD7FF0009880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2AE98C61CFBD7FF0009880F /* Project object */;
+}
